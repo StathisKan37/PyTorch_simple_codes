@@ -4,7 +4,7 @@ import numpy as np
 # Initializing a tensor, directly from data
 tensor_1 = torch.tensor([[1, 2],[3, 4]])
 print('Tensor:\n', tensor_1)
-
+print('hello')
 # Initializing a tensor, from a NumPy array
 np_array = np.array([[1, 2],[3, 4]])
 tensor_2 = torch.from_numpy(np_array)
