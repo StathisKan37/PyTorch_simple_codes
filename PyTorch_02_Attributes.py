@@ -1,5 +1,4 @@
 import torch
-import numpy as np
 
 # Initializing a 3x4 tensor
 tensor_1 = torch.rand(3,4)
