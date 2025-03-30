@@ -20,3 +20,7 @@ print('Last column:', tensor_2[..., -1])
 # Joining tensors
 tensor_3 = torch.cat([tensor_1, tensor_2], dim=1)
 print('Tensor 1 and 2 joined:\n', tensor_3)
+
+# Tensor resizing (3x4 -> 2x6)
+tensor_4 = tensor_1.view(2,6)
+print(tensor_4)
