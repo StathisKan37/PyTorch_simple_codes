@@ -1,22 +1,31 @@
 import torch
 
-# Initializing a 3x4 tensor
-tensor_1 = torch.rand(3,4)
-print('Tensor 1:\n', tensor_1)
+# Initializing two tensors
+tensor_A = torch.tensor([[ 1, 2, 3, 4],[ 5, 6, 7, 8]])
+print('Tensor A:\n', tensor_A)
+tensor_B = torch.tensor([[ 9,10,11,12],[13,14,15,16]])
+print('Tensor B:\n', tensor_B)
 
-# Attributes
-print('Shape of tensor:', tensor_1.shape)
-print('Datatype of tensor:', tensor_1.dtype)
-print('Device tensor is stored on:', tensor_1.device)
+# Tensor addition
+tensor_add = torch.add(tensor_B, tensor_A)
+print('Tensor B + A:\n', tensor_add)
 
-print('First row:', tensor_1[0])
-print('First column:', tensor_1[:, 0])
-print('Last column:', tensor_1[:, -1])
+# Tensor substraction
+tensor_sub = torch.sub(tensor_B, tensor_A)
+print('Tensor B - A:\n', tensor_sub)
 
-# Initializing a tensor with ones
-tensor_2 = torch.ones(3, 4)
-print('Tensor 2:\n', tensor_2)
+# Tensor multiplication
+tensor_mul = torch.mul(tensor_B, tensor_A)
+print('Tensor B * A:\n', tensor_mul)
 
-# Joining tensors
-tensor_3 = torch.cat([tensor_1, tensor_2], dim=1)
-print('Tensor 1 and 2 joined:\n', tensor_3)
+# Tensor division
+tensor_div = torch.div(tensor_B, tensor_A)
+print('Tensor B / A:\n', tensor_div)
+
+# Tensor modulus remainder
+tensor_mod = torch.remainder(tensor_B, tensor_A)
+print('Tensor B % A:\n', tensor_mod)
+
+# Tensor powers
+tensor_pow = torch.pow(tensor_B, tensor_A)
+print('Tensor B ^ A:\n', tensor_pow)
