@@ -29,3 +29,11 @@ print('Tensor B % A:\n', tensor_mod)
 # Tensor powers
 tensor_pow = torch.pow(tensor_B, tensor_A)
 print('Tensor B ^ A:\n', tensor_pow)
+
+# Tensor C is the transpose of tensor A
+tensor_C = tensor_A.T
+print('Tensor C:\n', tensor_C)
+
+# Matrix multiplication
+tensor_mmul = tensor_A @ tensor_C
+print('Matrix multiplication:\n', tensor_mmul)
